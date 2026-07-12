@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       downloadBtn.style.opacity = '0.5';
     }
   } catch (error) {
-    console.error('Error fetching release:', error);
-    versionText.textContent = 'Erro ao buscar versão.';
+    // Silencia o erro no console para repositórios não encontrados ou rate limit excedido
+    versionText.textContent = 'Versão 1.0 (Beta)';
+    downloadBtn.href = '#';
   }
 });
