@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       downloadBtn.style.opacity = '0.5';
     }
   } catch (error) {
-    // Silencia o erro no console para repositórios não encontrados ou rate limit excedido
-    versionText.textContent = 'Versão 1.0 (Beta)';
-    downloadBtn.href = '#';
+    // Silencia o erro no console e usa o texto traduzido via i18n nativo no HTML
+    downloadBtn.href = 'https://github.com/TioYaK/TibiaProgressTracker/releases';
   }
 });
