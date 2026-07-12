@@ -499,3 +499,77 @@ h1, h2, h3, .logo {
 .text-red { color: #ef4444 !important; }
 .text-gold { color: #fbbf24 !important; }
 .text-blue { color: #38bdf8 !important; }
+
+/* Mock Export Cards (Replicating App Output) */
+.mock-export-card {
+  width: 480px;
+  height: 270px; /* 16:9 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  font-family: var(--font-sans);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.mock-export-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+.mock-card-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 35%, transparent 100%);
+  z-index: 1;
+}
+.mock-card-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.mock-card-stats {
+  width: 45%;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 17, 26, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+.mock-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.mock-stat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+.mock-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 2px;
+}
+.mock-label { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.65rem; }
+.mock-val { font-weight: 700; color: var(--text-main); }
+.mock-highlight { background: rgba(255,255,255,0.05); padding: 4px; border-radius: 4px; margin-top: 4px; border: none; }
+.mock-highlight .mock-label { color: #fff; }
+
+@media (max-width: 768px) {
+  .mock-export-card { width: 100%; height: 220px; }
+  .mock-card-stats { width: 55%; padding: 1rem 0.75rem; }
+}
