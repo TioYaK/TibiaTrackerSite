@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     // Fetch latest release from GitHub API
-    const response = await fetch('https://api.github.com/repos/TioYaK/TibiaTracker-Releases/releases/latest');
+    const response = await fetch('https://api.github.com/repos/TioYaK/ServiceCards/releases/latest');
     
     if (!response.ok) {
       throw new Error('Failed to fetch latest release');
@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   } catch (error) {
     // Silencia o erro no console e usa o texto traduzido via i18n nativo no HTML
-    downloadBtn.href = 'https://github.com/TioYaK/TibiaProgressTracker/releases';
+    downloadBtn.href = 'https://github.com/TioYaK/ServiceCards';
   }
 });
