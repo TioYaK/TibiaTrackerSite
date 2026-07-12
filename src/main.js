@@ -1,6 +1,8 @@
 import './style.css';
+import { initI18n } from './i18n.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
+  initI18n();
   const versionText = document.getElementById('version-text');
   const downloadBtn = document.getElementById('download-btn');
 

@@ -9,6 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_CODIGO_AQUI"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SEU_CODIGO_AQUI');
+    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -23,9 +32,14 @@
           TibiaTracker
         </div>
         <div class="nav-links">
-          <a href="#features">Recursos</a>
-          <a href="#showcase">Galeria</a>
-          <a href="https://wa.me/5511993872282" target="_blank" class="nav-btn-premium">Assinar Premium</a>
+          <div class="lang-selector" style="display:flex; gap: 0.5rem; margin-right: 1rem;">
+            <a href="#" class="lang-btn active" data-lang="pt" style="font-size:1.2rem; text-decoration:none;">🇧🇷</a>
+            <a href="#" class="lang-btn" data-lang="en" style="font-size:1.2rem; text-decoration:none;">🇺🇸</a>
+            <a href="#" class="lang-btn" data-lang="pl" style="font-size:1.2rem; text-decoration:none;">🇵🇱</a>
+          </div>
+          <a href="#features" data-i18n="nav_resources">Recursos</a>
+          <a href="#showcase" data-i18n="nav_showcase">Galeria</a>
+          <a href="https://wa.me/5511993872282" target="_blank" class="nav-btn-premium" data-i18n="nav_premium">Assinar Premium</a>
         </div>
       </div>
     </nav>
@@ -36,15 +50,15 @@
       <div class="hero-content">
         <div class="badge-tech">
           <span class="pulse-dot"></span>
-          Versão Oficial Windows
+          <span data-i18n="hero_badge">Versão Oficial Windows</span>
         </div>
         
         <h1 class="hero-title">
-          Evolua sua gameplay.<br/>
-          <span class="text-gradient">Domine sua Economia.</span>
+          <span data-i18n="hero_title_1">Evolua sua gameplay.</span><br/>
+          <span class="text-gradient" data-i18n="hero_title_2">Domine sua Economia.</span>
         </h1>
         
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
           O software definitivo para rastrear sua progressão no Tibia. Automação de Loot Split, gráficos detalhados e overlay inteligente para a sua tela de jogo.
         </p>
         
@@ -70,8 +84,8 @@
     <!-- Showcase Section (Vocations) -->
     <section id="showcase" class="showcase">
       <div class="section-header">
-        <h2 class="section-title">Design Incrível para suas Hunts</h2>
-        <p class="section-desc">Exporte seus dados do Hunt Analyser diretamente para cards estilizados. Compartilhe no Discord com um visual impecável.</p>
+        <h2 class="section-title" data-i18n="showcase_title">Design Incrível para suas Hunts</h2>
+        <p class="section-desc" data-i18n="showcase_desc">Exporte seus dados do Hunt Analyser diretamente para cards estilizados. Compartilhe no Discord com um visual impecável.</p>
       </div>
 
       <div class="showcase-container">
@@ -128,8 +142,8 @@
     <!-- Features Section -->
     <section id="features" class="features">
       <div class="section-header">
-        <h2 class="section-title">Ferramentas de Elite</h2>
-        <p class="section-desc">Construído do zero para maximizar sua eficiência dentro e fora do jogo.</p>
+        <h2 class="section-title" data-i18n="feat_title">Ferramentas de Elite</h2>
+        <p class="section-desc" data-i18n="feat_desc">Construído do zero para maximizar sua eficiência dentro e fora do jogo.</p>
       </div>
 
       <div class="features-grid">
@@ -137,24 +151,24 @@
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <h3>Loot Splitter Integrado</h3>
-          <p>Cole o log da party e deixe o sistema calcular os pagamentos do banco de cada membro instantaneamente.</p>
+          <h3 data-i18n="feat_1_title">Loot Splitter Integrado</h3>
+          <p data-i18n="feat_1_desc">Cole o log da party e deixe o sistema calcular os pagamentos do banco de cada membro instantaneamente.</p>
         </div>
         
         <div class="feature-box">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <h3>Dashboard Analítico</h3>
-          <p>Acompanhe seus gráficos de XP/hora, lucro mensal e histórico de suprimentos na nuvem.</p>
+          <h3 data-i18n="feat_2_title">Dashboard Analítico</h3>
+          <p data-i18n="feat_2_desc">Acompanhe seus gráficos de XP/hora, lucro mensal e histórico de suprimentos na nuvem.</p>
         </div>
 
         <div class="feature-box">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
           </div>
-          <h3>Temas Dinâmicos</h3>
-          <p>Exporte seus cards em diversos temas profissionais como Cyberpunk, Abyssal ou Clássico.</p>
+          <h3 data-i18n="feat_3_title">Temas Dinâmicos</h3>
+          <p data-i18n="feat_3_desc">Exporte seus cards em diversos temas profissionais como Cyberpunk, Abyssal ou Clássico.</p>
         </div>
       </div>
     </section>
@@ -169,11 +183,11 @@
             </svg>
             TibiaTracker
           </div>
-          <p>Elevando a experiência de jogadores e times.</p>
+          <p data-i18n="footer_tag">Elevando a experiência de jogadores e times.</p>
         </div>
         <div class="footer-links">
-          <h4>Legal e Suporte</h4>
-          <a href="/TibiaTrackerSite/termos.html">Termos e Privacidade</a>
+          <h4 data-i18n="footer_legal">Legal e Suporte</h4>
+          <a href="/TibiaTrackerSite/termos.html" data-i18n="footer_terms">Termos e Privacidade</a>
           <a href="https://wa.me/5511993872282" target="_blank" class="footer-whatsapp">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
@@ -183,7 +197,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 TibiaTracker. Não afiliado à CipSoft GmbH.</p>
+        <p data-i18n="footer_copy">&copy; 2026 TibiaTracker. Não afiliado à CipSoft GmbH.</p>
       </div>
     </footer>
 
