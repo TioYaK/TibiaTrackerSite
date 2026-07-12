@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/TibiaTrackerSite/assets/main-CJhZQyFV.js"></script>
-    <link rel="stylesheet" crossorigin href="/TibiaTrackerSite/assets/style-DB8geOuk.css">
+    <script type="module" crossorigin src="/TibiaTrackerSite/assets/main-D8WV1EhK.js"></script>
+    <link rel="stylesheet" crossorigin href="/TibiaTrackerSite/assets/style-DEzW-6Zk.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -77,17 +77,52 @@
       </div>
 
       <div class="showcase-container">
-        <div class="vocation-card">
-          <img src="/TibiaTrackerSite/assets/knight.png" alt="Elite Knight" />
+        <!-- Card 1: Hunt Analyser -->
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Hunt Analyser</span>
+            <span class="stat-badge xp">XP Peak</span>
+          </div>
+          <div class="stat-body">
+            <div class="stat-row"><span class="label">XP Gain:</span><span class="value text-green">4,250,000</span></div>
+            <div class="stat-row"><span class="label">XP/h:</span><span class="value">6,800,000</span></div>
+            <div class="stat-row"><span class="label">Loot:</span><span class="value text-gold">2,150,400</span></div>
+            <div class="stat-row"><span class="label">Supplies:</span><span class="value text-red">450,200</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-row highlight"><span class="label">Balance:</span><span class="value text-green">1,700,200</span></div>
+          </div>
         </div>
-        <div class="vocation-card">
-          <img src="/TibiaTrackerSite/assets/paladin.png" alt="Royal Paladin" />
+
+        <!-- Card 2: Party Hunt (Loot Split) -->
+        <div class="stat-card card-highlight">
+          <div class="stat-header">
+            <span class="stat-title">Party Hunt</span>
+            <span class="stat-badge profit">High Profit</span>
+          </div>
+          <div class="stat-body">
+            <div class="stat-row"><span class="label">Session:</span><span class="value">02:30h</span></div>
+            <div class="stat-row"><span class="label">Total Loot:</span><span class="value text-gold">8,500,000</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-row"><span class="label">Elite Knight:</span><span class="value text-blue">Transfer 1.2kk</span></div>
+            <div class="stat-row"><span class="label">Elder Druid:</span><span class="value text-blue">Transfer 1.5kk</span></div>
+            <div class="stat-row"><span class="label">Master Sorc:</span><span class="value text-blue">Transfer 1.1kk</span></div>
+          </div>
         </div>
-        <div class="vocation-card">
-          <img src="/TibiaTrackerSite/assets/druid.png" alt="Elder Druid" />
-        </div>
-        <div class="vocation-card">
-          <img src="/TibiaTrackerSite/assets/sorcerer.png" alt="Master Sorcerer" />
+
+        <!-- Card 3: Damage Analyser -->
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Damage Analyser</span>
+            <span class="stat-badge damage">Top Dmg</span>
+          </div>
+          <div class="stat-body">
+            <div class="stat-row"><span class="label">Total Damage:</span><span class="value">12,450,000</span></div>
+            <div class="stat-row"><span class="label">Dmg/h:</span><span class="value">4,150,000</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat-row"><span class="label">Avalanche:</span><span class="value">45%</span></div>
+            <div class="stat-row"><span class="label">Exori Gran:</span><span class="value">30%</span></div>
+            <div class="stat-row"><span class="label">Melee:</span><span class="value">25%</span></div>
+          </div>
         </div>
       </div>
     </section>
