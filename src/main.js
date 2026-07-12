@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     // Fetch latest release from GitHub API
-    const response = await fetch('https://api.github.com/repos/TioYaK/ServiceCards/releases/latest');
+    const response = await fetch('https://api.github.com/repos/TioYaK/TibiaTracker-Releases/releases/latest');
     
     if (!response.ok) {
       throw new Error('Failed to fetch latest release');

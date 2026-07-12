@@ -8,18 +8,18 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <span>Tibia</span> Tracker
+          <span class="tibia-font">Tibia</span> Tracker
         </div>
         <div class="nav-links">
+          <a href="#showcase">Galeria</a>
           <a href="#features">Recursos</a>
-          <a href="#how-it-works">Como Funciona</a>
           <a href="https://wa.me/5511926007896" target="_blank" class="nav-btn-premium">Comprar Premium</a>
         </div>
       </div>
@@ -27,13 +27,13 @@
 
     <!-- Hero Section -->
     <header class="hero">
-      <div class="hero-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-      </div>
+      <div class="hero-bg-image"></div>
+      <div class="hero-overlay"></div>
+      
       <div class="hero-content">
-        <h1 class="hero-title">Eleve suas Hunts para o <span class="text-gradient">Próximo Nível</span></h1>
-        <p class="hero-subtitle">Gere relatórios visuais impressionantes, gerencie seus serviços de boost, acompanhe suas metas e faça a divisão do Loot da Party em segundos.</p>
+        <div class="badge-rpg">⚔️ A Melhor Ferramenta para Tibianos</div>
+        <h1 class="hero-title">Transforme suas hunts em <span class="text-gold">Glória Visual</span></h1>
+        <p class="hero-subtitle">Gere relatórios impressionantes, calcule o Loot da sua Party sem dor de cabeça e acompanhe sua progressão épica.</p>
         
         <div class="hero-actions">
           <a href="#" id="download-btn" class="btn btn-primary">
@@ -44,66 +44,77 @@
             </div>
           </a>
           <a href="https://wa.me/5511926007896" target="_blank" class="btn btn-secondary">
-            Obter Acesso Premium
+            Obter Chave Premium
           </a>
         </div>
         
-        <p class="hero-note">Teste Grátis por 7 dias. Sem cartão de crédito.</p>
+        <p class="hero-note">Inicie sua jornada. Teste Grátis por 7 dias.</p>
       </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Showcase Section (Vocations) -->
+    <section id="showcase" class="showcase">
       <div class="section-title">
-        <h2>Por que usar o Tibia Tracker?</h2>
-        <p>Desenvolvido para automatizar o seu trabalho e impressionar seus clientes.</p>
+        <h2 class="rpg-heading">Cartões de Vocação</h2>
+        <p>Seus dados do Hunt Analyser transformados em pura arte estética. Escolha seu avatar e impressione seu time.</p>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">✨</div>
-          <h3>Cards Impressionantes</h3>
-          <p>Transforme os dados chatos do Hunt Analyser em imagens estéticas. Suporta diversos temas como Cyberpunk, Retrô, Abyssal e Nature.</p>
+      <div class="vocation-grid">
+        <div class="vocation-card">
+          <div class="vocation-img-wrapper">
+            <img src="/TibiaTrackerSite/assets/knight.png" alt="Elite Knight" />
+            <div class="vocation-overlay"></div>
+            <span class="vocation-badge badge-ek">Elite Knight</span>
+          </div>
         </div>
-        
-        <div class="feature-card">
-          <div class="feature-icon">💰</div>
-          <h3>Party Loot & Services</h3>
-          <p>Calculadora automática de Cashback e divisão de lucro. Acabou a dor de cabeça para calcular o pagamento dos membros da PT.</p>
+        <div class="vocation-card">
+          <div class="vocation-img-wrapper">
+            <img src="/TibiaTrackerSite/assets/paladin.png" alt="Royal Paladin" />
+            <div class="vocation-overlay"></div>
+            <span class="vocation-badge badge-rp">Royal Paladin</span>
+          </div>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">📈</div>
-          <h3>Histórico em Nuvem</h3>
-          <p>Suas hunts salvas na nuvem com relatórios mensais e evolução de XP/Rank para você analisar o seu rendimento ao longo do tempo.</p>
+        <div class="vocation-card">
+          <div class="vocation-img-wrapper">
+            <img src="/TibiaTrackerSite/assets/druid.png" alt="Elder Druid" />
+            <div class="vocation-overlay"></div>
+            <span class="vocation-badge badge-ed">Elder Druid</span>
+          </div>
+        </div>
+        <div class="vocation-card">
+          <div class="vocation-img-wrapper">
+            <img src="/TibiaTrackerSite/assets/sorcerer.png" alt="Master Sorcerer" />
+            <div class="vocation-overlay"></div>
+            <span class="vocation-badge badge-ms">Master Sorcerer</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section id="how-it-works" class="how-it-works">
+    <!-- Features Section -->
+    <section id="features" class="features">
       <div class="section-title">
-        <h2>Como Funciona?</h2>
-        <p>Três passos simples para gerar seus relatórios.</p>
+        <h2 class="rpg-heading">Arsenal de Recursos</h2>
+        <p>Tudo o que você precisa para dominar a economia e o progresso do seu char.</p>
       </div>
 
-      <div class="steps-container">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Copie o Log</h3>
-          <p>No Tibia, abra a janela do Hunting Analyser, clique no botão Copy to Clipboard.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3 class="rpg-subheading">Loot Splitter Inteligente</h3>
+          <p>Diga adeus à calculadora! Cole o log da party e o app calcula automaticamente a transferência do banco para cada membro com precisão.</p>
         </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Cole no App</h3>
-          <p>Abra o Tibia Tracker, clique em "Nova Hunt" e cole os dados lá dentro.</p>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3 class="rpg-subheading">Histórico Épico em Nuvem</h3>
+          <p>Todas as suas hunts ficam salvas em nosso banco de dados. Veja seus gráficos de evolução e quebre seus próprios recordes.</p>
         </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Pronto!</h3>
-          <p>O aplicativo gera automaticamente o card visual, calcula a divisão da party e salva no banco de dados.</p>
+
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="rpg-subheading">Temas e Customizações</h3>
+          <p>Múltiplos temas como Cyberpunk, Retrô, Nature e Abyssal para o seu cartão de Hunt combinar com a vibe da sua hunt.</p>
         </div>
       </div>
     </section>
@@ -112,13 +123,12 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-brand">
-          <div class="logo"><span>Tibia</span> Tracker</div>
-          <p>Feito com ❤️ por Kit Maclaud</p>
+          <div class="logo"><span class="tibia-font">Tibia</span> Tracker</div>
+          <p>Forjado com ❤️ por Kit Maclaud nas fornalhas de Kazordoon.</p>
         </div>
         <div class="footer-links">
-          <h4>Suporte</h4>
-          <a href="https://wa.me/5511926007896" target="_blank">WhatsApp (Vendas)</a>
-          <a href="mailto:contato@exemplo.com">Contato</a>
+          <h4>Taberna (Suporte)</h4>
+          <a href="https://wa.me/5511926007896" target="_blank">Falar com o NPC (WhatsApp)</a>
         </div>
       </div>
       <div class="footer-bottom">
