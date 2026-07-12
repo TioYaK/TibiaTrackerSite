@@ -423,5 +423,79 @@ h1, h2, h3, .logo {
 @media (max-width: 768px) {
   .hero-title { font-size: 2.5rem; }
   .nav-links { display: none; }
-  .card-highlight { transform: none; box-shadow: none; }
 }
+
+/* Stat Cards */
+.stat-card {
+  width: 280px;
+  background: rgba(15, 17, 26, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  font-family: var(--font-sans);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 0.75rem;
+}
+.stat-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+.stat-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.stat-badge.xp { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+.stat-badge.profit { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.stat-badge.damage { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+
+.stat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.stat-row .label {
+  color: var(--text-muted);
+}
+.stat-row .value {
+  font-weight: 600;
+  color: var(--text-main);
+}
+.stat-row.highlight {
+  background: rgba(255,255,255,0.03);
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+}
+.stat-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+  margin: 0.5rem 0;
+}
+.text-green { color: #10b981 !important; }
+.text-red { color: #ef4444 !important; }
+.text-gold { color: #fbbf24 !important; }
+.text-blue { color: #38bdf8 !important; }
