@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     e.preventDefault();
     
     // Altere este nome quando tiver a versão oficial
-    const installerFile = 'Tibia-Tracker-Web-Setup-2.0.9.exe';
+    const installerFile = 'Tibia-Tracker-Web-Setup-2.0.10.exe';
     
     // Inicia o download diretamente do próprio servidor do site (esconde o link real no hover)
     const link = document.createElement('a');
